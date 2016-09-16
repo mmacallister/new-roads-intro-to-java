@@ -26,11 +26,13 @@ public class ComputeGrade{
     
     double average = (grade1 + grade2 + grade3) / 3;
     
-    String finalGrade = name + "'s final grade is a " + getLetterGrade();
+    String finalGrade = name + "'s final grade is a " + getLetterGrade(average);
     
     System.out.println(finalGrade);
     
-    public static char getLetterGrade(double grade){
+ }
+    
+    public static char getLetterGrade(double average){
       
          if(average >= 90){
       return 'A';
@@ -47,7 +49,4 @@ public class ComputeGrade{
       return 'F';
     }
       
-    }
-    
   }
-}
